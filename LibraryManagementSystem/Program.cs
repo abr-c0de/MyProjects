@@ -9,8 +9,8 @@ do
 {
     Console.WriteLine("\n----------------------------WELCOME TO WINNERS LIBRARY --------------------------------\n");
 
-    Console.WriteLine("\n-----------------Disclaimer-------------------\n To Access the book you must know the book id." +
-                          "\n To get the book id and List Press 3\n---------------------------------------\n");
+    Console.WriteLine("\n-------------------------Disclaimer-------------------------\n To Access the book you must know the book id." +
+                          "\n To get the book id and List Press 3\n------------------------------------------------------\n");
 
     Console.WriteLine("\n Press 1 to Add Book \n Press 2 to Remove Book \n Press 3 to List all Books" +
                       "\n Press 4 to Search Book \n Press 5 to Return Book \n Press 6 to Borrow Book " +
