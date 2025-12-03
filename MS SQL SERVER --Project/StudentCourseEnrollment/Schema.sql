@@ -1,0 +1,24 @@
+CREATE DATABASE Institution
+
+USE Institution
+
+CREATE TABLE Students(
+StudentId INT PRIMARY KEY IDENTITY(1,1),
+[Name] VARCHAR(54) NOT NULL,
+Email VARCHAR(90) UNIQUE NOT NULL
+)
+
+CREATE TABLE Courses(
+CourseId INT PRIMARY KEY IDENTITY(1,1),
+Title VARCHAR(100) NOT NULL,
+Credit INT CHECK(Credit BETWEEN 1 AND 5) NOT NULL
+)
+
+CREATE TABLE Enrollment(
+StudentId INT,
+CourseId INT,
+EnrollDate DATE NOT NULL,
+PRIMARY KEY(StudentId,CourseId), --composite key
+FOREIGN KEY(StudentId) REFERENCES Students(StudentId),
+FOREIGN KEY(CourseId) REFERENCES Courses(CourseId)
+)
